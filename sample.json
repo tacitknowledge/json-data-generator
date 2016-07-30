@@ -1,0 +1,11 @@
+{
+  "name": "${ faker.name.firstName() }",
+  "product": "${ faker.commerce.productName() }",
+  "randomNumberInArray__$repeat_2_6": [
+    {
+      "boolean1": "${ faker.random.boolean() }",
+      "company": "${ faker.company.companyName() }"
+    }
+  ],
+  "price": "${ faker.random.number({max: 10000, min: 100})/100 }"
+}
