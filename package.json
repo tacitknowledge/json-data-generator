@@ -1,0 +1,14 @@
+{
+  "name": "json-data-generator",
+  "version": "1.0.0",
+  "main": "generate.js",
+  "scripts": {
+    "start": "node generate.js"
+  },
+  "dependencies": {
+     "faker" : "~3.1.0"
+  },
+  "author": "Hyun Jeong",
+  "license": "Apache-2.0",
+  "description": "generate random data"
+}
