@@ -14,3 +14,7 @@ Uses Faker.js (https://github.com/Marak/faker.js) to generate mock data.
 2. To use Faker API, use `${ faker. ...}`. See http://marak.github.io/faker.js/index.html for available faker documentation
 3. You can specify random number of elements in an array by using the following syntax as the property name: `<property name>__$repeat_<min>_<max>`. See `sample.json.template`
 4. If -c is specified, it will create a collection of the template objects
+
+## To Do
+1. Template syntax validations
+2. Write tests
