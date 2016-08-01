@@ -16,6 +16,6 @@
     "postalCode": "${ faker.address.zipCode() }",
     "stateCode": "${ faker.address.stateAbbr() }"
   },
-  "referenceOtherProperties": "${ $root.product }",
+  "referenceOtherProperties": "${ this.$root.product }",
   "customRandomValue": "${ Math.random() }"
 }
