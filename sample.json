@@ -1,11 +1,21 @@
 {
   "name": "${ faker.name.firstName() }",
   "product": "${ faker.commerce.productName() }",
-  "randomNumberInArray__$repeat_2_6": [
+  "randomArraySize__$repeat_2_6": [
     {
       "boolean1": "${ faker.random.boolean() }",
       "company": "${ faker.company.companyName() }"
     }
   ],
-  "price": "${ faker.random.number({max: 10000, min: 100})/100 }"
+  "price": "${ faker.random.number({max: 10000, min: 100})/100 }",
+  "multipleFakerExpressions": "${ faker.fake('{{name.lastName}}, {{name.firstName}} {{name.suffix}}') }",
+  "address": {
+    "addressLine1": "${ faker.address.streetAddress() }",
+    "city": "${ faker.address.city() }",
+    "countryCode": "US",
+    "postalCode": "${ faker.address.zipCode() }",
+    "stateCode": "${ faker.address.stateAbbr() }"
+  },
+  "referenceOtherProperties": "${ $root.product }",
+  "customRandomValue": "${ Math.random() }"
 }
