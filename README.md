@@ -6,7 +6,8 @@ Uses Faker.js (https://github.com/Marak/faker.js) to generate mock data.
 
 ## Usage
 1. Install Node and NPM
-2. run `node generate.js sample.json.template [-o outputfile] [-c collectionSize ]`
+2. run `npm install`
+3. run `node generate.js sample.json.template [-o outputfile] [-c collectionSize ]`
 
 ## Template Syntax
 1. Anything wrapped in `${ ... }` will be evaluated.  Works with any javascript syntax
